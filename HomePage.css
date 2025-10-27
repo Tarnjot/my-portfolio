@@ -1,0 +1,358 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #0f172a; /* Slate 900 */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #4338ca; /* Indigo 700 */
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container .logo-link {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #e0e7ff; /* Indigo 200 */
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero Section (Homepage) */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    padding: 2rem 1.5rem;
+}
+
+.hero-text {
+    margin-bottom: 2.5rem;
+}
+
+.hero-greeting {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #475569; /* Slate 600 */
+    display: block;
+}
+
+.hero-name {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #4338ca; /* Indigo 700 */
+    display: block;
+    margin: -0.5rem 0;
+}
+
+.hero-tagline {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #475569; /* Slate 600 */
+    display: block;
+    margin-top: 1rem;
+}
+
+/* Social Links (Homepage) */
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.separator-line {
+    width: 2px;
+    height: 100px;
+    background-color: #cbd5e1; /* Slate 300 */
+}
+
+.social-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-link-button {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block;
+}
+
+.social-link-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #e2e8f0; /* Slate 200 */
+    border-radius: 8px;
+    background-color: #f8fafc; /* Slate 50 */
+    transition: background-color 0.2s;
+}
+
+.social-link-button:hover .social-link-row {
+    background-color: #f1f5f9; /* Slate 100 */
+}
+
+.social-link-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.social-link-row span {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #334155; /* Slate 700 */
+}
+
+.social-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    color: #4338ca;
+}
+
+/* About Blurb (Homepage) */
+.about-blurb {
+    max-width: 800px;
+    margin: 2rem auto 4rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.about-blurb h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1e293b; /* Slate 800 */
+    margin-bottom: 1rem;
+}
+
+.about-blurb p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #334155; /* Slate 700 */
+}
+
+/* Generic Page Styles (About, Contact, Projects) */
+.page-section {
+    max-width: 1100px;
+    margin: 3rem auto 4rem auto;
+    padding: 0 1.5rem;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b; /* Slate 800 */
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    font-size: 1.25rem;
+    color: #475569; /* Slate 600 */
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 700px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #334155; /* Slate 700 */
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #cbd5e1; /* Slate 300 */
+    border-radius: 8px;
+    background-color: #f8fafc; /* Slate 50 */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #4338ca; /* Indigo 700 */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.form-button:hover {
+    background-color: #3730a3; /* Indigo 800 */
+}
+
+/* About Page Styles */
+.about-container {
+    max-width: 800px;
+}
+
+.about-text p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #334155; /* Slate 700 */
+    margin-bottom: 1.5rem;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Project Page Styles */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: #f8fafc; /* Slate 50 */
+    border: 1px solid #e2e8f0; /* Slate 200 */
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden; /* Ensures image corners are rounded */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4338ca;
+    margin: 1.5rem 1.5rem 0.75rem 1.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #334155; /* Slate 700 */
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.project-links {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.project-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4338ca;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.project-link:hover {
+    color: #3730a3;
+    text-decoration: underline;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-name {
+        font-size: 3rem;
+    }
+
+    .hero-greeting {
+        font-size: 1.25rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .separator-line {
+        width: 100px;
+        height: 2px;
+    }
+}
+
